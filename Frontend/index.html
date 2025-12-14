@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pulla Reddy Sweets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<div id="loginPage" class="login-container">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<!-- MAIN APP -->
+<div id="app" class="hidden">
+
+  <nav class="navbar">
+    <h2>Pulla Reddy Sweets</h2>
+    <input type="text" placeholder="Search sweets...">
+    <div>
+      <button>Cart (0)</button>
+      <button onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</button>
+
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Traditional Indian Sweets</h1>
+    <p>Pure • Authentic • Handcrafted</p>
+  </div>
+
+  <div class="container">
+    <h2>Available Sweets</h2>
+    <div class="sweet-list" id="sweetList"></div>
+  </div>
+
+  <div class="admin">
+    <h3>Admin Panel</h3>
+    <input type="text" id="sweetName" placeholder="Sweet Name">
+    <input type="number" id="sweetQty" placeholder="Quantity">
+    <button onclick="addSweet()">Add Sweet</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+<div id="cartPanel" class="cart hidden">
+  <h3>Your Cart</h3>
+  <div id="cartItems"></div>
+  <p><strong>Total Items:</strong> <span id="cartTotal">0</span></p>
+  <button onclick="toggleCart()">Close</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sweets</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f6efe4;
+    }
+
+    header {
+      background: #8b1c1c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      width: 200px;
+      padding: 15px;
+      border-radius: 6px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    button {
+      background: #8b1c1c;
+      color: white;
+      border: none;
+      padding: 6px;
+      width: 100%;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Traditional Indian Sweets</h1>
+  <p>Pure • Authentic • Handcrafted</p>
+</header>
+
+<div class="container">
+  <div class="card">
+    <img src="https://i.imgur.com/6xZK6rQ.jpg">
+    <h3>Ladoo</h3>
+    <p>Qty: 10</p>
+    <button onclick="addToCart('Ladoo')">Purchase</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/4KXQmJp.jpg">
+    <h3>Jalebi</h3>
+    <p>Qty: 5</p>
+    <button onclick="addToCart('Jalebi')">Purchase</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/4LZQZzH.jpg">
+    <h3>Kaju Katli</h3>
+    <p>Qty: 8</p>
+    <button onclick="addToCart('Kaju Katli')">Purchase</button>
+  </div>
+</div>
+
+<script>
+  function addToCart(item) {
+    alert(item + " added to cart");
+  }
+</script>
+
+</body>
+</html>
