@@ -97,3 +97,4 @@ Used an AI assistant to generate initial boilerplate and assist with debugging.
 Manually implemented business logic, UI integration, and testing.
 
 Co-authored-by: ChatGPT <ai@users.noreply.github.com>
+<img width="1360" height="768" alt="Screenshot 2025-12-15 114303" src="https://github.com/user-attachments/assets/d067cbc0-a936-43e6-9894-37d3cfcca486" />
